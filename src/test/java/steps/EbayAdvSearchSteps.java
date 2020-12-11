@@ -8,6 +8,7 @@ import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 
 import static org.junit.Assert.fail;
+import static utils.PropertyReader.getProp;
 
 public class EbayAdvSearchSteps {
     CommonActions commonActions;
@@ -21,7 +22,7 @@ public class EbayAdvSearchSteps {
     @Given("I am on Advanced Search Page")
     public void iAmOnAdvancedSearchPage() {
         System.setProperty("webdriver.chrome.driver", "E:\\Drivers\\chromedriver.exe");
-        commonActions.goToUrl("https://www.ebay.com/sch/ebayadvsearch");
+        commonActions.goToUrl(getProp("ebay.advance.search.url"));
     }
 
     @When("I click on Ebay Logo")

@@ -34,6 +34,7 @@ public class EbayHomeActions {
     public void selectCategoryOption(String option){
         List<WebElement> cat = ebayHomeElements.catOptions;
         for(WebElement x : cat){
+            System.out.println("class names of category options: "+ x.getAttribute("value"));
             if (x.getText().trim().equalsIgnoreCase(option)){
                 x.click();
                 break;

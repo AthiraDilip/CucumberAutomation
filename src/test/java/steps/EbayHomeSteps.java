@@ -11,7 +11,6 @@ import static org.junit.Assert.fail;
 public class EbayHomeSteps {
     CommonActions commonActions;
     EbayHomeActions ebayHomeActions;
-
     public EbayHomeSteps(CommonActions commonActions, EbayHomeActions ebayHomeActions) {
         this.commonActions = commonActions;
         this.ebayHomeActions = ebayHomeActions;
